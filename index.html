@@ -8,7 +8,7 @@
   <!-- SEO -->
   <title>AHAM PURAM — Sample Luxury Interior Design Website</title>
   <meta name="description" content="Sample website concept for AHAM PURAM, showcasing luxury residential and commercial interior design services in Chennai." />
-  <meta name="keywords" content="AHAM PURAM, interior designers chennai, luxury interior design, villa interiors, modular kitchens, turnkey interior projects" />
+  <meta name="keywords" content="AHAM PURAM, interior designers chennai, luxury interior design, villa interiors, turnkey interior projects" />
   <meta name="author" content="AHAM PURAM" />
   <link rel="canonical" href="https://ahampuram.example.com/" />
 
@@ -16,7 +16,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="AHAM PURAM — Sample Luxury Interior Design Website" />
   <meta property="og:description" content="Luxury interiors crafted for modern living in Chennai. This is a sample concept website." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80" />
+  <meta property="og:image" content="projects/MUT 20.webp" />
   <meta property="og:url" content="https://ahampuram.example.com/" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -27,9 +27,9 @@
     "@type": "InteriorDesignService",
     "name": "AHAM PURAM",
     "description": "Sample luxury interior design website for AHAM PURAM.",
-    "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80",
-    "telephone": "+91-88386-20964",
-    "email": "hello@rkinteriors.in",
+    "image": "projects/MUT 20.webp",
+    "telephone": "+91-7418186596",
+    "email": "vipin@ahampurambuildingdesigns.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "123, Vasantha St, Golden George Nagar, Mogappair East",
@@ -73,7 +73,7 @@
   <!-- ===== NAVIGATION ===== -->
   <header class="nav" id="nav">
     <a href="#hero" class="nav__logo" data-magnetic>
-      <span>AHAM</span><em>PURAM</em>
+      <img src="logo.webp" alt="AHAM PURAM Building Designs" style="height:48px;width:auto;display:block;" />
     </a>
     <nav class="nav__links">
       <a href="#about" data-magnetic>Studio</a>
@@ -108,8 +108,21 @@
     <!-- ===== 1. HERO ===== -->
     <section class="hero" id="hero">
       <div class="hero__media">
-        <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80">
-          <source src="https://videos.pexels.com/video-files/7578552/7578552-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+        <video
+          id="heroVideo"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="projects/LP 22.webp"
+        >
+          <!-- Primary: warm luxury living room — cinematic pan, marble & chandeliers -->
+          <source src="https://videos.pexels.com/video-files/6474633/6474633-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+          <!-- Fallback 1: elegant penthouse interior walkthrough -->
+          <source src="https://videos.pexels.com/video-files/7578552/7578552-hd_1920_1080_30fps.mp4" type="video/mp4" />
+          <!-- Fallback 2: luxury villa interior slow dolly -->
+          <source src="https://videos.pexels.com/video-files/3209828/3209828-hd_1920_1080_25fps.mp4" type="video/mp4" />
         </video>
         <div class="hero__overlay"></div>
       </div>
@@ -168,10 +181,10 @@
       <div class="about__body">
         <div class="about__imgs">
           <div class="about__img about__img--1" data-parallax data-speed="-40">
-            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=900&q=80" alt="Luxury living room interior design" loading="lazy" />
+            <img src="projects/MUT 20.webp" alt="AHAM PURAM project interior" loading="lazy" />
           </div>
           <div class="about__img about__img--2" data-parallax data-speed="60">
-            <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=700&q=80" alt="Elegant bedroom interior" loading="lazy" />
+            <img src="projects/fc 1.webp" alt="AHAM PURAM building design" loading="lazy" />
           </div>
         </div>
         <div class="about__text">
@@ -195,42 +208,36 @@
           <h3 class="service__title">Residential Interiors</h3>
           <p class="service__desc">Tailored homes that balance comfort, character and timeless sophistication.</p>
           <span class="service__arrow">→</span>
-          <div class="service__hover-img"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80" alt="Residential interior" loading="lazy" /></div>
+          <div class="service__hover-img"><img src="projects/RM 5.webp" alt="Residential interior" loading="lazy" /></div>
         </div>
         <div class="service" data-reveal>
           <span class="service__index">02</span>
           <h3 class="service__title">Luxury Villas</h3>
           <p class="service__desc">Grand, immersive environments designed for elevated everyday living.</p>
           <span class="service__arrow">→</span>
-          <div class="service__hover-img"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Luxury villa interior" loading="lazy" /></div>
+          <div class="service__hover-img"><img src="projects/KAD 10.webp" alt="Luxury villa design" loading="lazy" /></div>
         </div>
         <div class="service" data-reveal>
           <span class="service__index">03</span>
           <h3 class="service__title">Apartments</h3>
           <p class="service__desc">Smart, refined spaces that maximise every square foot beautifully.</p>
           <span class="service__arrow">→</span>
-          <div class="service__hover-img"><img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&q=80" alt="Apartment interior" loading="lazy" /></div>
+          <div class="service__hover-img"><img src="projects/LP 22.webp" alt="Apartment interior" loading="lazy" /></div>
         </div>
         <div class="service" data-reveal>
           <span class="service__index">04</span>
           <h3 class="service__title">Commercial Spaces</h3>
           <p class="service__desc">Workplaces and hospitality interiors that command presence.</p>
           <span class="service__arrow">→</span>
-          <div class="service__hover-img"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&q=80" alt="Commercial interior" loading="lazy" /></div>
+          <div class="service__hover-img"><img src="projects/GF OFFICE 2.webp" alt="Commercial space" loading="lazy" /></div>
         </div>
+
         <div class="service" data-reveal>
           <span class="service__index">05</span>
-          <h3 class="service__title">Modular Kitchens</h3>
-          <p class="service__desc">Engineered elegance where culinary function meets sculptural form.</p>
-          <span class="service__arrow">→</span>
-          <div class="service__hover-img"><img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&q=80" alt="Modular kitchen" loading="lazy" /></div>
-        </div>
-        <div class="service" data-reveal>
-          <span class="service__index">06</span>
           <h3 class="service__title">Turnkey Projects</h3>
           <p class="service__desc">End-to-end delivery — concept, build and styling, seamlessly managed.</p>
           <span class="service__arrow">→</span>
-          <div class="service__hover-img"><img src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=600&q=80" alt="Turnkey project interior" loading="lazy" /></div>
+          <div class="service__hover-img"><img src="projects/ENT 8 copy.webp" alt="Turnkey project" loading="lazy" /></div>
         </div>
       </div>
     </section>
@@ -243,67 +250,175 @@
       </div>
       <div class="work__grid">
         <article class="project project--tall" data-reveal data-magnetic>
-          <div class="project__img"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80" alt="The Monochrome Penthouse" loading="lazy" /></div>
+          <div class="project__img"><img src="projects/KAD 6.webp" alt="KAD Residence" loading="lazy" /></div>
           <div class="project__meta">
-            <span class="project__cat">Penthouse · Residential</span>
-            <h3 class="project__title">The Monochrome Penthouse</h3>
-            <span class="project__year">2024 · Chennai</span>
+            <span class="project__cat">Residential · Architecture</span>
+            <h3 class="project__title">KAD Residence</h3>
+            <span class="project__year">Tirunelveli</span>
           </div>
         </article>
         <article class="project" data-reveal data-magnetic>
-          <div class="project__img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80" alt="Villa Aurelia" loading="lazy" /></div>
+          <div class="project__img"><img src="projects/CWS 2.webp" alt="CWS Project" loading="lazy" /></div>
           <div class="project__meta">
-            <span class="project__cat">Villa · Turnkey</span>
-            <h3 class="project__title">Villa Aurelia</h3>
-            <span class="project__year">2024 · Goa</span>
+            <span class="project__cat">Commercial · Design</span>
+            <h3 class="project__title">CWS Project</h3>
+            <span class="project__year">Tirunelveli</span>
           </div>
         </article>
         <article class="project" data-reveal data-magnetic>
-          <div class="project__img"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=900&q=80" alt="The Ivory Residence" loading="lazy" /></div>
+          <div class="project__img"><img src="projects/ENT 6 copy.webp" alt="ENT Exterior" loading="lazy" /></div>
           <div class="project__meta">
-            <span class="project__cat">Apartment · Residential</span>
-            <h3 class="project__title">The Ivory Residence</h3>
-            <span class="project__year">2023 · Mumbai</span>
+            <span class="project__cat">Exterior · Elevation</span>
+            <h3 class="project__title">ENT Elevation</h3>
+            <span class="project__year">Tirunelveli</span>
           </div>
         </article>
         <article class="project project--tall" data-reveal data-magnetic>
-          <div class="project__img"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80" alt="Atrium House" loading="lazy" /></div>
+          <div class="project__img"><img src="projects/VI 9.webp" alt="VI Villa" loading="lazy" /></div>
           <div class="project__meta">
-            <span class="project__cat">Bungalow · Architecture</span>
-            <h3 class="project__title">Atrium House</h3>
-            <span class="project__year">2023 · Bengaluru</span>
+            <span class="project__cat">Villa · Turnkey</span>
+            <h3 class="project__title">VI Villa</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project project--tall" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/MUT 20.webp" alt="MUT Residence" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Residential · Architecture</span>
+            <h3 class="project__title">MUT Residence</h3>
+            <span class="project__year">Tirunelveli</span>
           </div>
         </article>
         <article class="project" data-reveal data-magnetic>
-          <div class="project__img"><img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=900&q=80" alt="Soul Lounge" loading="lazy" /></div>
+          <div class="project__img"><img src="projects/KAD 2.webp" alt="KAD Project" loading="lazy" /></div>
           <div class="project__meta">
-            <span class="project__cat">Hospitality · Commercial</span>
-            <h3 class="project__title">Soul Lounge</h3>
-            <span class="project__year">2022 · Delhi</span>
+            <span class="project__cat">Residential · Architecture</span>
+            <h3 class="project__title">KAD Project</h3>
+            <span class="project__year">Tirunelveli</span>
           </div>
         </article>
         <article class="project" data-reveal data-magnetic>
-          <div class="project__img"><img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=900&q=80" alt="The Warm Minimal" loading="lazy" /></div>
+          <div class="project__img"><img src="projects/KAD 4.webp" alt="KAD Design" loading="lazy" /></div>
           <div class="project__meta">
-            <span class="project__cat">Apartment · Modular</span>
-            <h3 class="project__title">The Warm Minimal</h3>
-            <span class="project__year">2022 · Pune</span>
+            <span class="project__cat">Residential · Design</span>
+            <h3 class="project__title">KAD Design</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project project--tall" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/KAD 8.webp" alt="KAD Villa" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Villa · Architecture</span>
+            <h3 class="project__title">KAD Villa</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/KAD 10.webp" alt="KAD Luxury" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Luxury · Residential</span>
+            <h3 class="project__title">KAD Luxury Home</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/LP 22.webp" alt="Lopez Villa" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Villa · Elevation</span>
+            <h3 class="project__title">Lopez Villa</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project project--tall" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/LP 23.webp" alt="LP Modern House" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Residential · Modern</span>
+            <h3 class="project__title">LP Modern House</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/CWS 5.webp" alt="CWS Interior" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Commercial · Interior</span>
+            <h3 class="project__title">CWS Interior</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/CWS 8.webp" alt="CWS Office Design" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Commercial · Office</span>
+            <h3 class="project__title">CWS Office Design</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project project--tall" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/ENT 8 copy.webp" alt="ENT Shrine" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Exterior · Religious</span>
+            <h3 class="project__title">ENT Shrine</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/EASU 7.webp" alt="EASU Music House" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Exterior · Concept</span>
+            <h3 class="project__title">EASU Music House</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/RM 5.webp" alt="RM Residence" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Residential · Architecture</span>
+            <h3 class="project__title">RM Residence</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project project--tall" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/VI 4.webp" alt="VI Luxury Villa" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Villa · Luxury</span>
+            <h3 class="project__title">VI Luxury Villa</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/RC 4.webp" alt="RC Project" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Residential · Design</span>
+            <h3 class="project__title">RC Project</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/fc 1.webp" alt="Function Hall" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Commercial · Interior</span>
+            <h3 class="project__title">Function Hall</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project project--tall" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/fc 2.webp" alt="Function Hall II" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Commercial · Interior</span>
+            <h3 class="project__title">Function Hall II</h3>
+            <span class="project__year">Tirunelveli</span>
+          </div>
+        </article>
+        <article class="project" data-reveal data-magnetic>
+          <div class="project__img"><img src="projects/kr 34.webp" alt="KR Residence" loading="lazy" /></div>
+          <div class="project__meta">
+            <span class="project__cat">Residential · Architecture</span>
+            <h3 class="project__title">KR Residence</h3>
+            <span class="project__year">Tirunelveli</span>
           </div>
         </article>
       </div>
 
-      <!-- Before / After Slider -->
-      <div class="ba" data-reveal>
-        <div class="ba__head">
-          <p class="section-eyebrow">The Transformation</p>
-          <h3 class="ba__title">From blank canvas to breathtaking.</h3>
-        </div>
-        <div class="ba__slider" id="baSlider">
-          <div class="ba__img ba__img--after"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80" alt="After interior design" loading="lazy" /><span class="ba__tag ba__tag--after">After</span></div>
-          <div class="ba__img ba__img--before" id="baBefore"><img src="https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=1200&q=80" alt="Before interior design" loading="lazy" /><span class="ba__tag ba__tag--before">Before</span></div>
-          <div class="ba__handle" id="baHandle"><span></span></div>
-        </div>
-      </div>
     </section>
 
     <!-- ===== 6. LEAD GENERATION ===== -->
@@ -322,8 +437,11 @@
         </div>
 
         <div class="lead__right" data-reveal>
-          <form class="lead__form" id="leadForm" novalidate>
+          <form class="lead__form" id="leadForm" action="https://formsubmit.co/mainsjee237@gmail.com" method="POST" novalidate>
             <h3 class="lead__form-title">Claim Sample Session</h3>
+            <input type="hidden" name="_subject" value="New inquiry from AHAM PURAM website" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
             <div class="field">
               <input type="text" id="name" name="name" required placeholder=" " />
               <label for="name">Full Name</label>
@@ -351,38 +469,8 @@
       </div>
     </section>
 
-    <!-- ===== 7. TESTIMONIALS ===== -->
-    <section class="testimonials" id="testimonials">
-      <div class="testimonials__head">
-        <p class="section-eyebrow" data-reveal>Client Stories</p>
-        <h2 class="section-title split-text">Trusted by those who expect nothing less than exceptional.</h2>
-      </div>
-      <div class="testimonials__row">
-        <article class="testimonial" data-reveal data-magnetic>
-          <div class="testimonial__video">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80" alt="Client" loading="lazy" />
-          </div>
-          <blockquote>“They understood our family better than we understood ourselves. The home feels like us — only more beautiful.”</blockquote>
-          <footer><strong>Aarav &amp; Meera Kapoor</strong><span>Villa Aurelia, Goa</span></footer>
-        </article>
-        <article class="testimonial" data-reveal data-magnetic>
-          <div class="testimonial__video">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80" alt="Client" loading="lazy" />
-          </div>
-          <blockquote>“Every rupee was visible in the detailing. The most seamless turnkey experience we could have imagined.”</blockquote>
-          <footer><strong>Rohan Mehta</strong><span>The Monochrome Penthouse</span></footer>
-        </article>
-        <article class="testimonial" data-reveal data-magnetic>
-          <div class="testimonial__video">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&q=80" alt="Client" loading="lazy" />
-          </div>
-          <blockquote>“From concept to handover, total calm. We just watched our dream take shape, beautifully managed.”</blockquote>
-          <footer><strong>Sana Reddy</strong><span>The Ivory Residence, Mumbai</span></footer>
-        </article>
-      </div>
-    </section>
 
-    <!-- ===== 8. PROCESS TIMELINE ===== -->
+    <!-- ===== 7. PROCESS TIMELINE ===== -->
     <section class="process" id="process">
       <div class="process__head">
         <p class="section-eyebrow" data-reveal>How We Work</p>
@@ -418,7 +506,7 @@
       </div>
     </section>
 
-    <!-- ===== 9. FAQ ===== -->
+    <!-- ===== 8. FAQ ===== -->
     <section class="faq" id="faq">
       <div class="faq__head">
         <p class="section-eyebrow" data-reveal>Questions</p>
@@ -448,22 +536,23 @@
       </div>
     </section>
 
-    <!-- ===== 10. CONTACT ===== -->
+    <!-- ===== 9. CONTACT ===== -->
     <section class="contact" id="contact">
       <div class="contact__inner">
         <div class="contact__info">
           <p class="section-eyebrow" data-reveal>Get in Touch</p>
           <h2 class="contact__title split-text">Let's create your sample concept together.</h2>
           <ul class="contact__details">
-            <li data-reveal><span>Phone</span><a href="tel:+918838620964" data-magnetic>+91 88386 20964</a></li>
-            <li data-reveal><span>Email</span><a href="mailto:hello@rkinteriors.in" data-magnetic>hello@rkinteriors.in</a></li>
-            <li data-reveal><span>Studio</span><address>123, Vasantha St, Golden George Nagar,<br/>Mogappair East, Chennai, Tamil Nadu 600107</address></li>
+            <li data-reveal><span>Phone</span><a href="tel:+917418186596" data-magnetic>+91 7418186596</a></li>
+            <li data-reveal><span>WhatsApp</span><a href="https://wa.me/917418186596" target="_blank" data-magnetic>+91 7418186596</a></li>
+            <li data-reveal><span>Email</span><a href="mailto:vipin@ahampurambuildingdesigns.com" data-magnetic>vipin@ahampurambuildingdesigns.com</a></li>
+            <li data-reveal><span>Studio</span><address>AHAM-PURAM Building designs, No 10, Pillaimar street, Manimoorteeswaram,<br/>Tirunelveli, Tamil Nadu 627001</address></li>
           </ul>
           <a href="#lead" class="btn btn--gold btn-magnetic" data-magnetic><span>Request Sample Consultation</span></a>
         </div>
         <div class="contact__map" data-reveal>
           <iframe
-            src="https://www.google.com/maps?q=Mogappair+East+Chennai&output=embed"
+            src="https://www.google.com/maps?q=AHAM-PURAM+Building+designs,+No+10,+Pillaimar+street,+Manimoorteeswaram,+Tirunelveli,+Tamil+Nadu+627001&output=embed"
             loading="lazy" title="Studio location" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
@@ -471,7 +560,7 @@
 
   </main>
 
-  <!-- ===== 11. FOOTER ===== -->
+  <!-- ===== 10. FOOTER ===== -->
   <footer class="footer">
     <div class="footer__top">
       <div class="footer__brand">
@@ -490,7 +579,7 @@
           <h4>Services</h4>
           <a href="#services">Residential</a>
           <a href="#services">Luxury Villas</a>
-          <a href="#services">Modular Kitchens</a>
+
           <a href="#services">Turnkey</a>
         </div>
         <div class="footer__col">

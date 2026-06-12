@@ -117,6 +117,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     gsap.set(".hero__eyebrow, .hero__sub, .hero__actions", { y: 30 });
 
+    // Graceful video fallback
+    const heroVideo = document.getElementById("heroVideo");
+    if (heroVideo) {
+      heroVideo.addEventListener("error", () => {
+        heroVideo.style.display = "none";
+      }, true);
+      heroVideo.play().catch(() => {
+        heroVideo.style.display = "none";
+      });
+    }
+
     // Parallax hero media on scroll
     if (!prefersReduced) {
       gsap.to(".hero__media", {
@@ -299,7 +310,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     form.addEventListener("submit", (e) => {
-      e.preventDefault();
       let valid = true;
       Object.keys(validators).forEach((key) => {
         const input = form.elements[key];
@@ -311,11 +321,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
       if (!valid) {
+        e.preventDefault();
         gsap.fromTo(form, { x: -8 }, { x: 0, duration: 0.45, ease: "elastic.out(1,0.4)" });
         return;
       }
 
-      // Animate out form, show success
+      // If a real form endpoint is configured, allow the browser to submit.
+      if (form.action && form.action.includes("formsubmit.co")) return;
+
+      // Fallback behavior for local/demo mode without backend endpoint.
+      e.preventDefault();
       gsap.to(form, {
         opacity: 0, y: 20, duration: 0.5, ease: "power2.in",
         onComplete: () => {
